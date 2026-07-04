@@ -1,0 +1,25 @@
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Settings & validation
+pydantic==2.13.4
+pydantic-settings==2.14.1
+email-validator==2.2.0
+
+# MongoDB (async)
+beanie==1.30.0
+motor==3.7.1
+
+# Auth
+python-jose[cryptography]==3.4.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.2.1
+python-multipart==0.0.20
+
+# HTTP client (Resend email API at runtime; also used by the test client)
+httpx==0.28.1
+
+# Tests
+pytest==8.3.4
+mongomock-motor==0.0.36   # in-memory async Mongo for DB-backed tests (no server needed)
